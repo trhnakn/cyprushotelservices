@@ -1,25 +1,154 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cyprus Hotel Services</title>
-  <meta http-equiv="refresh" content="0; url=hotel-desktop.html">
-  <script>
-    (function(){
-      var ua = navigator.userAgent || "";
-      var isMobile = /Android|iPhone|iPod|IEMobile|Opera Mini/i.test(ua);
-      if (isMobile) window.location.href = "hotel-mobile.html";
-      else window.location.href = "hotel-desktop.html";
-    })();
-  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Cyprus Hotel Services | Blog</title>
+  <meta name="description" content="Slot oyun rehberleri, stratejiler ve oyun incelemeleri. Sweet Bonanza, Gates of Olympus ve daha fazlası." />
+
+  <link rel="canonical" href="https://www.cyprushotelservices.com/" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Basic SEO / Social -->
+  <meta property="og:title" content="Cyprus Hotel Services | Blog" />
+  <meta property="og:description" content="Slot oyun rehberleri ve incelemeler." />
+  <meta property="og:type" content="website" />
 </head>
+
 <body>
-  Yönlendiriliyor...
-  <p>
-    Eğer yönlenmezse:
-    <a href="hotel-desktop.html">Masaüstü</a> •
-    <a href="hotel-mobile.html">Mobil</a>
-  </p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark">CHS</span>
+        <span class="brand-text">
+          <strong>Cyprus Hotel Services</strong>
+          <small>Blog • Rehber • İnceleme</small>
+        </span>
+      </a>
+
+      <nav class="nav">
+        <a href="/" class="active">Blog</a>
+        <a href="#kategoriler">Kategoriler</a>
+        <a href="#hakkinda">Hakkında</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Slot Rehberleri & İncelemeler</h1>
+          <p class="muted">
+            Oyunların nasıl oynandığı, özellikler, bonus turları ve yeni başlayanlar için anlaşılır anlatım.
+          </p>
+
+          <div class="searchbar" role="search">
+            <input id="searchInput" type="search" placeholder="Bloglarda ara (ör: sweet bonanza, gates of olympus)" aria-label="Blog arama" />
+            <button id="clearBtn" type="button">Temizle</button>
+          </div>
+
+          <div class="chips" id="kategoriler">
+            <button class="chip is-active" data-tag="all">Hepsi</button>
+            <button class="chip" data-tag="rehber">Rehber</button>
+            <button class="chip" data-tag="inceleme">İnceleme</button>
+            <button class="chip" data-tag="yeni-baslayan">Yeni Başlayan</button>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>Önemli</h3>
+          <ul class="checklist">
+            <li>18+ içerik. Sorumlu oyun oynayın.</li>
+            <li>İçerikler bilgilendirme amaçlıdır.</li>
+            <li>Bağlantılar affiliate olabilir (aşağıda açıklıyoruz).</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-head">
+        <h2>En yeni yazılar</h2>
+        <p class="muted">Yazı sayısı arttıkça burası otomatik filtrelenir (arama + kategori).</p>
+      </div>
+
+      <div class="grid" id="postGrid">
+        <!-- CARD 1 -->
+        <article class="card" data-tags="rehber yeni-baslayan" data-title="sweet bonanza nasıl oynanır">
+          <a class="card-link" href="/posts/sweet-bonanza-nasil-oynanir.html">
+            <div class="card-body">
+              <div class="meta">
+                <span class="pill">Rehber</span>
+                <span class="date">Güncellendi: 2025</span>
+              </div>
+              <h3>Sweet Bonanza Nasıl Oynanır?</h3>
+              <p class="muted">
+                Çarpan mantığı, tumble sistemi, bonus turu ve pratik ipuçları — yeni başlayanlar için sade anlatım.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span>Oku</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card" data-tags="rehber inceleme" data-title="gates of olympus nasıl oynanır">
+          <a class="card-link" href="/posts/gates-of-olympus-nasil-oynanir.html">
+            <div class="card-body">
+              <div class="meta">
+                <span class="pill">Rehber</span>
+                <span class="date">Güncellendi: 2025</span>
+              </div>
+              <h3>Gates of Olympus Nasıl Oynanır?</h3>
+              <p class="muted">
+                Zeus çarpanları, scatter’lar, free spins ve bankroll yönetimi — adım adım anlatım.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span>Oku</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
+        </article>
+
+        <!-- İstersen buraya yeni kartlar ekleriz -->
+      </div>
+    </section>
+
+    <section class="container" id="hakkinda">
+      <div class="two-col">
+        <div class="panel">
+          <h2>Hakkında</h2>
+          <p class="muted">
+            Bu site slot oyunları hakkında rehber içerikler sunar. İçerikler bilgilendirme amaçlıdır.
+            Bazı bağlantılar affiliate olabilir; bir bağlantı üzerinden kayıt/işlem olursa komisyon alabiliriz.
+          </p>
+          <p class="muted">
+            <strong>Sorumlu oyun</strong>: Oyun bağımlılık riski taşıyabilir. Bütçe belirleyin ve 18 yaş altı kesinlikle oynamamalı.
+          </p>
+        </div>
+
+        <div class="panel" id="iletisim">
+          <h2>İletişim</h2>
+          <p class="muted">E-posta: <a href="mailto:info@cyprushotelservices.com">info@cyprushotelservices.com</a></p>
+          <p class="muted">İstersen “Gizlilik / Çerez / Sorumlu Oyun” sayfalarını da ekleriz.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Cyprus Hotel Services • 18+ • Bilgilendirme amaçlı</small>
+      <small class="muted">Affiliate Disclosure: Bağlantılar affiliate olabilir.</small>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
